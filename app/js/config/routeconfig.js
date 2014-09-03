@@ -3,6 +3,13 @@
 //* 导航数据，允许同一个状态出现在多个组下，在大型项目中可以扩展出roles等选项，来决定其可见性
 English.constant('RouteConfig', [
     {
+        name: 'home',
+        url:"/home",
+        views: {
+            "content@": { templateUrl:'views/home/hello.html'}
+        }   
+    },  
+    {
         name: 'course',
         url:"/course",
         views: {

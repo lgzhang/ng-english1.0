@@ -61,10 +61,8 @@ English.constant('NavData', [
                         id: 'a',
                         content: 'Be careful1',
                         views: {
-                            "brief@":  {templateUrl:'views/course/home/brief.html'},
-                            "content@": {
-                                templateUrl:'views/course/listen/video.html',
-                            }
+                            "brief@":  { templateUrl:'views/course/home/brief.html'},
+                            "content@": { templateUrl:'views/course/listen/video.html'}
                         }   
                     },
                     {
