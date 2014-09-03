@@ -1,0 +1,12 @@
+.listenEnglish,.writeEnglish{width:100%;padding:15px;border-radius:10px;font-size: 3.2em; overflow-x:hidden;overflow-y: auto;}
+.listenEnglish{ border: 1px solid #92B4CF;  background: #CDE8F5; color: #333;height:100px; }
+.writeEnglish{ border: 1px solid #AEB0B3;  background: #F5F8FA; color: #339900; margin-top: 10px;height:300px;}
+.accuracy{border: 1px solid #ccc; background: #FDF7DB; height: 410px; overflow-x:hidden; overflow-y: auto;}
+.panel-body{padding: 6px;}
+.panel-body .table tbody tr:hover{ background: #FEFDF5}
+.panel-body .table tbody tr td{ border-bottom: 1px  dashed #92B4CF; border-top: none;}
+.panel-body .table tbody tr:last-child td{ border-bottom:none}
+.Typesetbtn1{padding:3px 12px; font-size: 3em;}
+
+.dictation_score{ border: 1px solid #98BEDB; padding: 10px}
+

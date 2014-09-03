@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/navleft.css">
+  <link rel="stylesheet" href="css/E_listen.css">
+  <link rel="stylesheet" href="bower_components/videogular-themes-default/videogular.min.css">
+
+  
+  
+ <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="Shortcut Icon" href="favicon.ico"/>
+  <link rel="apple-touch-icon" href="favicon.ico"/>
+  <title ng-bind="$state.current.name">情景英语</title>  
+</head>
+
+<body ng-app="English">
+<!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="bower_components/es5-shim/es5-shim.js"></script>
+  <script src="bower_components/json3/lib/json3.min.js"></script>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<app-header></app-header>
+<app-container></app-container>
+<app-footer></app-footer>
+
+<!--<app-container></app-container>-->
+
+<!-- Bootstrap -->
+  
+  <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>  
+  <script src="bower_components/angular-route/angular-route.min.js"></script> -->
+  <script src="bower_components/angular/angular.min.js"></script>
+
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <script src="bower_components/videogular/videogular.js"></script>
+  <script src="bower_components/videogular/controls.js"></script>
+  <script src="bower_components/videogular/overlay-play.js"></script>
+  <script src="bower_components/videogular/buffering.js"></script>
+  <script src="bower_components/videogular/poster.js"></script>
+  <script src="bower_components/me-pageloading/me-pageloading.min.js"></script>
+
+  <!-- build:js scripts/vendor.js -->
+  <script src="js/app.js"></script>
+  <script src="js/config/nav-data.js"></script>
+  <script src="js/config/routeconfig.js"></script>
+  <script src="js/router.js"></script>
+
+
+  <script src="js/directives/app/header.js"></script>
+  <script src="js/directives/app/container.js"></script>
+  <script src="js/directives/app/footer.js"></script>
+  <script src="js/directives/app/navleft.js"></script>
+  <script src="js/directives/app/content.js"></script>
+  <script src="js/directives/app/brief.js"></script>
+
+
+  <script src="js/controllers/header/headerCtrl.js"></script>
+  <script src="js/controllers/container/courseNavCtrl.js"></script>
+  <script src="js/controllers/container/navleftCtrl.js"></script>
+  <script src="js/controllers/container/briefCtrl.js"></script>
+  <script src="js/controllers/container/videoCtrl.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

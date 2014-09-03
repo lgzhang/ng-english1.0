@@ -1,0 +1,16 @@
+<div class="nav-holder">
+  <div class="nav-wrapper" ng-class="{expand: show, narrow: !show}">
+    <accordion>
+      <accordion-group ng-repeat="group in groups">
+        <accordion-heading>
+          <span class="titlelabel" ><span class="labelIcon" ng-click="isShow(show)">{{group.label}}</span><span >{{group.content}}</span></span>
+        </accordion-heading>
+
+        <div class="childContent" ng-repeat="item in group.items" ng-model="navchildData" btn-radio="'{{item.id}}'">
+          <a ui-sref="{{item.state}}"><span class="glyphicon glyphicon-facetime-video"></span><span class="text">{{item.content}}</span></a>
+        </div>
+        
+      </accordion-group>
+    </accordion>
+  </div>
+</div>

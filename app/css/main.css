@@ -1,0 +1,68 @@
+body {
+  font-size: 63%;
+  font-family:Arial,"Microsoft Yahei" !important;
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+/*loading css*/
+.loading {
+    overflow: hidden;
+    background: url(../images/header/load.gif) #FF6100 repeat-y right;
+    height: 2px;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    left: 0;
+    font-size: 0;
+    -webkit-animation:progressing 2s ease-out;
+    -moz-animation:progressing 2s ease-out;
+}
+
+@-moz-keyframes progressing {
+  0% {
+    width:0px;
+  }
+  100% {
+    width:100%;
+  }
+}
+@-webkit-keyframes progressing {
+  0% {
+    width:0px;
+  }
+  100% {
+    width:100%;
+  }
+}
+
+.navlist-topright a {
+  display: none;
+}
+
+@media (min-width: 768px) {
+	.navlist-topright a {
+		display: block;
+	}
+   .main-content {
+    margin-top: -200px;
+  }
+}
+
+@media (max-width: 768px) {
+	.menu a {
+		width: 100%;
+	}
+	.menu li {
+		margin-right: 2.5em;
+	}
+	.header-bg-right {
+		display: none;
+	}
+	.uni-logo {
+		margin-left: 8em;
+	}
+  .main-content {
+    margin-top: -15px;
+  }
+}
