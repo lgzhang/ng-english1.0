@@ -188,6 +188,9 @@
 
 .footer .bottom {
   background: #3d7bb3;
-  height: 16em;
   background-position: center bottom;
 }
+.footer .Foot{font-size:2em;color:#fff;  padding:28px 0;text-align: center;}
+.footer .Foot a{color:#fff;}
+.footer .Foot li{line-height:1.8em}
+.footer .Foot li span{ margin:0 10px; white-space: nowrap;}
