@@ -1,11 +1,5 @@
 'use strict';
-var English = angular.module('English', ['ui.router', 'ui.bootstrap', 
-	"com.2fdevs.videogular",
-	"com.2fdevs.videogular.plugins.controls",
-	"com.2fdevs.videogular.plugins.overlayplay",
-	"com.2fdevs.videogular.plugins.buffering",
-	"com.2fdevs.videogular.plugins.poster"
-	])
+var English = angular.module('English', ['ui.router', 'ui.bootstrap'])
 	.run(
 	  ['$rootScope', '$state', '$stateParams',
 	    function ($rootScope,   $state,   $stateParams) {

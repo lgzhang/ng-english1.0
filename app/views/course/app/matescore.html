@@ -1,0 +1,11 @@
+ <div class="classmate_score_table panel-body">
+   <table class="table">
+    <tbody>
+      <tr ng-repeat="ScoreDetail in classmateScoreDetail | filter : bestScore" >
+        <td class="classmateName">{{ScoreDetail.name}}</td>
+        <td class="text-right">{{ScoreDetail.score}}<span class="fen">分</span></td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
