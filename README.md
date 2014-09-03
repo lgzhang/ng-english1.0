@@ -29,7 +29,7 @@ BootStrap3 + Angular网站基础架构
 
 1. clone下去之后，请先确保有node环境和npm包管理，
    全局安装bower（npm install -g bower）
-   然后执行npm install和bower install命令，以便对grunt环境进行初始化。
+   然后执行npm install和bower install命令，以便对环境进行初始化。
    之后就可以用gulp来启动服务器进行查看和调试了。
    
 
