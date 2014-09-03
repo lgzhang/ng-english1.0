@@ -1,0 +1,49 @@
+
+      <div class="row cpractive">
+        <div class="col-sm-8" >
+         <div class="dictation_score borderRadius"><!-- 听写分数 -->
+           <div class="Class_highest_scor">
+             <div class="col-sm-8 col-xsm-8" > 
+               <span class="bigOrange"  data-toggle="tooltip" data-original-title="首次成绩和最高成绩的平均值" data-placement="right" title="首次成绩和最高成绩的平均值">96</span> <span class="color333_30">分</span><span class="larst">班级最高分：98</span>
+             </div>
+             <div class="col-sm-4 col-xsm-4 text-right wp_CheckTest_a" > 
+               <a href="#" class="CheckTest_a">查看试题</a>
+             </div>
+           </div>
+           
+           <div class="DictationDetails">
+            <div class="padding-left-none">
+             <span class="textHeader">常错试题/错误率</span>
+                 <ul class="wordErrorUl" ng-controller="incorrectCtrl">
+                   <li ng-repeat="wordincorrect in wordError  | orderBy:ErrorRateDescending:reverse | filter :bigIncorrectness" ><span class="errorWord D_errorWord">{{wordincorrect.word}}</span><span class="percent">{{wordincorrect.incorrectness}}%</span></li>
+                 </ul>
+           </div>
+         </div>
+         <div class="HistoryGrading" ng-controller="D_MyHistoryGradingController">
+           <span class="textHeader">历史成绩/时间</span>
+             <table class="table" ng-repeat="MyHistoryGrad in MyHistoryGradingDetail" ng-controller="toggleDetailController">
+  <tr>
+    <td>{{MyHistoryGrad.score}}分</td>
+    <td class="HGradtimer">{{MyHistoryGrad.time}}</td>
+    <td class="HGradDetail" ng-click="toggleDetail()">详情</td>
+  </tr>
+  <tr class="DetailStyle" ng-show="Detailchecked">
+   <td colspan="3">
+    todo——空“正确答案”“我的答案”表格
+    <div><button class="packUp" type="button" ng-click="toggleDetail()" title="收起"></button>
+      <div>
+      </td>
+    </tr>
+  </table>
+         </div>
+       </div>  
+     </div>
+     <div class="col-sm-4">
+      <div  class="TryAgain"><button class="btn btn-success btn-lg Typesetbtn1" type="button">再试一次</button></div>
+      <div class="classmate_score borderRadius"><!-- 同学分数 -->
+        <div class="classmate_score_table_header"><span class="textHeader">你的同学</span></div>
+       <app-matescore> </app-matescore>
+        
+      </div>
+    </div>
+  </div>

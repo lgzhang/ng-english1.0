@@ -61,8 +61,11 @@ English.constant('NavData', [
                         id: 'a',
                         content: 'Be careful1',
                         views: {
-                            "brief@":  { templateUrl:'views/course/home/brief.html'},
-                            "content@": { templateUrl:'views/course/listen/video.html'}
+                            "brief@":  {templateUrl:'views/course/home/brief.html'},
+                            "content@": {
+                                templateUrl:'views/course/listen/video.html',
+                                //controller: 'testCtrl'
+                            }
                         }   
                     },
                     {
@@ -103,12 +106,19 @@ English.constant('NavData', [
                 items: [{
                     id: 'g',
                     state: 'course.Say.videoID',
-                    content: 'Be careful'
+                    content: 'Don’t tuch the ...' 
                     },
                     {
                         id: 'h',
                     state: 'course.Say.videoID',
-                    content: 'Be careful'
+                    content: 'Be careful',
+                    views: {
+                            "brief@":  {templateUrl:'views/course/home/brief.html'},
+                            "content@": {
+                                templateUrl:'views/course/say/cpractice.html',
+                                //controller: 'testCtrl'
+                            }
+                        }  
                     },
                     {
                         id: 'i',
@@ -129,7 +139,14 @@ English.constant('NavData', [
                     {
                         id: 'k',
                     state: 'course.Exercise.videoID',
-                    content: 'Be careful'
+                    content: 'Be careful',
+                    views: {
+                            "brief@":  {templateUrl:'views/course/home/brief.html'},
+                            "content@": {
+                                templateUrl:'views/course/exercise/Dexercise.html',
+                                //controller: 'testCtrl'
+                            }
+                        } 
                     },
                     {
                         id: 'l',
@@ -145,12 +162,26 @@ English.constant('NavData', [
                 items: [{
                     id: 'm',
                     state: 'course.write.write',
-                    content: 'To be best'
+                    content: 'To be best',
+                    views: {
+                            "brief@":  {templateUrl:'views/course/home/brief.html'},
+                            "content@": {
+                                templateUrl:'views/course/write/write.html',
+                                //controller: 'testCtrl'
+                            }
+                        }
                     },
                     {
                         id: 'n',
                     state: 'course.write.videoID',
-                    content: 'Be careful'
+                    content: 'Be careful',
+                    views: {
+                            "brief@":  {templateUrl:'views/course/home/brief.html'},
+                            "content@": {
+                                templateUrl:'views/course/write/write2.html',
+                                //controller: 'testCtrl'
+                            }
+                        }
                     },
                     {
                         id: 'o',
