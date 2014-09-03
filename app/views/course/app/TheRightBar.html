@@ -1,0 +1,24 @@
+<div  class="TryAgain"><button class="btn btn-success btn-lg Typesetbtn1" type="button">再试一次</button></div>
+<div class="classmate_score borderRadius"><!-- 同学分数 -->
+  <div class="classmate_score_table_header"><span class="textHeader">你的同学</span></div>
+
+  <div class="classmate_score_table">
+   <table class="table Listentab" ng-repeat="ScoreDetail in classmateScoreDetail | filter : bestScore" >
+    <tbody>
+      <tr>
+        <td class="classmateName"><button type="button" class="smallplay"></button>{{ScoreDetail.name}}</td>
+        <td class="text-right">{{ScoreDetail.score}}<span class="fen">分</span></td>
+      </tr>
+      <tr class="praisAndStep_tr">  
+        <td colspan="2" >
+         <div class="praisAndStep2"> 
+           <p class="praise"><i ng-click="ScoreDetail.praise = ScoreDetail.praise + 1"></i><span>赞({{ScoreDetail.praise}})</span></p>
+           <p class="step"><i ng-click="ScoreDetail.step = ScoreDetail.step + 1"></i><span>踩({{ScoreDetail.step}})</span></p>
+         </div>
+       </td>
+     </tr>
+   </tbody>
+ </table>
+
+</div>
+</div>

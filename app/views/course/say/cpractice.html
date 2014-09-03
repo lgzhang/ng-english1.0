@@ -1,0 +1,93 @@
+
+<div class="row cpractive">
+  <div class="col-sm-8" >
+
+   <div class="dictation_score borderRadius">
+    <div class="Class_highest_scor">
+      <div class="border-right bestModular" > 
+       <div class="white_space">
+        <span class="bigOrange"  data-toggle="tooltip" data-original-title="首次成绩和最高成绩的平均值" data-placement="right" title="首次成绩和最高成绩的平均值">96</span>
+        <span class="color333_30">分</span>
+        <a href="#" class="bestDetails">详情</a>
+      </div>
+      <span class="larst">班级最高分：98</span>
+    </div>
+    <div class="Playinfo" >
+     <button class="PlayBtn" type="button"></button>
+     <div class="box-info">
+       <p class="size-h2">2014080973</p>
+       <p class="text-muted">慢速</p>
+     </div>
+   </div>
+   <div class="text-center praisAndStep" > 
+    <p class="praise"><i></i><span>赞(534)</span></p>
+    <p class="step"><i></i><span>踩(0)</span></p>
+  </div>
+</div>
+
+<div class="EachSentenceDetails BottomBorder">
+  <div class="padding-left-none" ng-controller="toggleDetailController">
+    <div class="textHeader">
+     详情：
+
+     <span class="Wronglogo"></span><span class="smallfont">＜60</span>
+     <span class="misslogo"></span><span class="smallfont">＜60~75</span>
+     <span class="correctlogo"></span><span class="smallfont">＞75</span>
+     <span class="Put_away"   ng-click="toggleDetail()"></span>
+   </div>
+   <div  ng-show="!Detailchecked">
+     <dl class="eachScore" >
+       <dt>
+         98分
+       </dt>
+       <dd>
+         oh <span class="red">jhon</span>,you should”t do that
+       </dd>
+     </dl>
+     <dl class="eachScore">
+       <dt>
+         98分
+       </dt>
+       <dd>
+         oh jhon,you shou<span class="Orange">ld”t </span>do that
+       </dd>
+     </dl>
+   </div>
+ </div>
+</div>
+<div class="TeacherComment BottomBorder">
+ <h4 class="textHeader startimg">教师点评</h4>
+ <p class="CommentText">写的不错，继续努力！写的不错，继续努力！写的不错，继续努力！</p>
+
+</div>
+<div class="HistoryGrading" ng-controller="historyctrl">
+ <span class="textHeader">历史练习结果</span>
+   <table class="table" ng-repeat="MyHistoryGrad in MyHistoryGrads" ng-controller="toggleDetailController">
+    <tr> 
+      <td class="HGradtitle"><button class="smallplay" type="button"></button>{{MyHistoryGrad.title}}</td>
+      <td>{{MyHistoryGrad.score}}分</td>
+
+      <td class="HGradDetail" ng-click="toggleDetail()">详情</td>
+    </tr>
+    <tr class="DetailStyle" ng-show="Detailchecked">
+     <td colspan="3">
+      <dl class="eachScore">
+             <dt>
+                 98分
+             </dt>
+             <dd>
+                 oh <span class="red">jhon</span>,you should”t do that
+             </dd>
+     </dl>
+      <div><button class="packUp" type="button" ng-click="toggleDetail()" title="收起"></button>
+      </div>
+    </td>
+  </tr>
+</table> 
+</div>
+</div>  
+</div>
+<div class="col-sm-4" >
+ <app-Right></app-Right> 
+</div>
+</div>
