@@ -7,7 +7,7 @@
         </accordion-heading>
 
         <div class="childContent" ng-repeat="item in group.items" ng-model="navchildData" btn-radio="'{{item.id}}'">
-          <a ui-sref="test{{item.state}}"><span class="glyphicon glyphicon-facetime-video"></span><span class="text">{{item.content}}</span></a>
+          <a ui-sref="{{item.state}}"><span class="glyphicon glyphicon-facetime-video"></span><span class="text">{{item.content}}</span></a>
         </div>
         
       </accordion-group>

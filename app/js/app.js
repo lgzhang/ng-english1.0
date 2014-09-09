@@ -1,5 +1,5 @@
 'use strict';
-var English = angular.module('English', ['ui.router', 'ui.bootstrap', 
+var English = angular.module('English', ['ui.router', 'ui.bootstrap', "restangular",
 	"com.2fdevs.videogular",
 	"com.2fdevs.videogular.plugins.controls",
 	"com.2fdevs.videogular.plugins.overlayplay",

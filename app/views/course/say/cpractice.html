@@ -62,27 +62,27 @@
 </div>
 <div class="HistoryGrading" ng-controller="historyctrl">
  <span class="textHeader">历史练习结果</span>
-   <table class="table" ng-repeat="MyHistoryGrad in MyHistoryGrads" ng-controller="toggleDetailController">
-    <tr> 
-      <td class="HGradtitle"><button class="smallplay" type="button"></button>{{MyHistoryGrad.title}}</td>
-      <td>{{MyHistoryGrad.score}}分</td>
+ <table class="table" ng-repeat="MyHistoryGrad in MyHistoryGrads" ng-controller="toggleDetailController">
+  <tr> 
+    <td class="HGradtitle"><button class="smallplay" type="button"></button>{{MyHistoryGrad.title}}</td>
+    <td>{{MyHistoryGrad.score}}分</td>
 
-      <td class="HGradDetail" ng-click="toggleDetail()">详情</td>
-    </tr>
-    <tr class="DetailStyle" ng-show="Detailchecked">
-     <td colspan="3">
-      <dl class="eachScore">
-             <dt>
-                 98分
-             </dt>
-             <dd>
-                 oh <span class="red">jhon</span>,you should”t do that
-             </dd>
-     </dl>
-      <div><button class="packUp" type="button" ng-click="toggleDetail()" title="收起"></button>
-      </div>
-    </td>
+    <td class="HGradDetail" ng-click="toggleDetail()">详情</td>
   </tr>
+  <tr class="DetailStyle" ng-show="Detailchecked">
+   <td colspan="3">
+    <dl class="eachScore">
+     <dt>
+       98分
+     </dt>
+     <dd>
+       oh <span class="red">jhon</span>,you should”t do that
+     </dd>
+   </dl>
+   <div><button class="packUp" type="button" ng-click="toggleDetail()" title="收起"></button>
+   </div>
+ </td>
+</tr>
 </table> 
 </div>
 </div>  

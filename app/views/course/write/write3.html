@@ -1,0 +1,27 @@
+
+<div class="row cpractive"  ng-controller="E_getSentence">
+	<div class="col-sm-12" >
+		<div class="thisinfo">
+			<img src="images/katongimg.png" class="leftimg">
+			<div class="rightbar"> 
+				<div class="mystar"><span class="thisscore">65</span> <span class="thisfen">分</span></div>
+				<p class="paperone">班级最高分：98</p>
+				<p class="papertwo">Fighting !  继续加油哦~</p>
+				<p class="paperone">乐豆：+5  朗读分值：+10</p>
+			</div>
+		</div>
+		<div class="infobottombar">
+			<span class="textHeader">分析结果</span>
+			<div class="Identification  text-right">
+				<span class="correctlogo"></span>正确
+				<span class="Wronglogo"></span>写错
+				<span class="misslogo"></span>漏写
+				<span class="glyphicon glyphicon-minus glyphicon-minus-add"></span>多写
+			</div>
+			<ul class="DictationSentence">
+				<li  ng-repeat="eachSentence in mysentence"><span class="grey666">[{{$index+1}}] </span><span ng-bind-html='eachSentence.sentence'></span> </li> 
+			</ul>
+		</div>
+		<div class="tryagin"><button  type="button" class="btn btn-success btn-lg">再试一次</button></div>
+	</div>
+</div>

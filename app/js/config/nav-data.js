@@ -28,23 +28,122 @@ English.constant('NavData', [
         label: 'courseHome',
         items: [
             {
-                state: 'course.unit',
-                label: 'Unit 1',
+                label: 'Module 1',
                 content: 'Friends',
                 items: [{
                         id: 'a',
+                        state: 'course.courseID',
+                        unit: 'Unit 1',
                         content: 'Amy is taller',
                         veiws:'',
                         controller: ""
                     },
                     {
-                        id: 'b',
-                        content: 'Be careful2'
+                        id: 'a',
+                        state: 'course.courseID',
+                        unit: 'Unit 1',
+                        content: 'Amy is taller',
+                        veiws:'',
+                        controller: ""
                     },
 
                     {
-                        id: 'c',
-                        content: 'Be careful3'
+                        id: 'a',
+                        state: 'course.courseID',
+                        unit: 'Unit 1',
+                        content: 'Amy is taller',
+                        veiws:'',
+                        controller: ""
+                    }
+                ]
+            },
+            {
+                label: 'Module 2',
+                content: "Touch",
+                items: [{
+                        id: 'a',
+                        state: 'course.courseID',
+                        unit: 'Unit 1',
+                        content: 'Amy is taller',
+                        veiws:'',
+                        controller: ""
+                    },
+                    {
+                        id: 'a',
+                        state: 'course.courseID',
+                        unit: 'Unit 1',
+                        content: 'Amy is taller',
+                        veiws:'',
+                        controller: ""
+                    },
+
+                    {
+                        id: 'a',
+                        state: 'course.courseID',
+                        unit: 'Unit 1',
+                        content: 'Amy is taller',
+                        veiws:'',
+                        controller: ""
+                    }
+                ]
+            },
+            {
+                label: 'Module 3',
+                content: 'School',
+                items: [{
+                        id: 'a',
+                        state: 'course.courseID',
+                        unit: 'Unit 1',
+                        content: 'Amy is taller',
+                        veiws:'',
+                        controller: ""
+                    },
+                    {
+                        id: 'a',
+                        state: 'course.courseID',
+                        unit: 'Unit 1',
+                        content: 'Amy is taller',
+                        veiws:'',
+                        controller: ""
+                    },
+
+                    {
+                        id: 'a',
+                        state: 'course.courseID',
+                        unit: 'Unit 1',
+                        content: 'Amy is taller',
+                        veiws:'',
+                        controller: ""
+                    }
+                ]
+            },
+            {
+                label: 'Module 4',
+                content: 'Party',
+                items: [{
+                        id: 'a',
+                        state: 'course.courseID',
+                        unit: 'Unit 1',
+                        content: 'Amy is taller',
+                        veiws:'',
+                        controller: ""
+                    },
+                    {
+                        id: 'a',
+                        state: 'course.courseID',
+                        unit: 'Unit 1',
+                        content: 'Amy is taller',
+                        veiws:'',
+                        controller: ""
+                    },
+
+                    {
+                        id: 'a',
+                        state: 'course.courseID',
+                        unit: 'Unit 1',
+                        content: 'Amy is taller',
+                        veiws:'',
+                        controller: ""
                     }
                 ]
             }

@@ -14,14 +14,9 @@
 
    </div>
    <div class="writeEnglish">
-    <!-- Englishparagraph[0].eachsentence:{{Englishparagraph[0].eachsentence}}<br>
-     letters：{{letters}} <br>
-     {{myletterInfo}} -->
-    <!-- <span ng-repeat="letter in letters track by $index" class="{{$index==shuzi[0]?'red':'className'}}">{{letter}}</span> -->
-       <!-- <div  ng-repeat="myhtml in lettersHtml track by $index" ng-bind-html="myhtml">
-       </div> -->
-       <!-- {{myletterInfo}}  -->
-       <div ng-bind-html="myletterInfo[myletterInfo.length-1].sentence"></div>
+     <!-- {{Englishparagraph[0].eachsentence}}<br>
+     letters：{{letters}} <br> -->
+    <span ng-repeat="letter in letters track by $index" class="{{$index==shuzu[0]?'red':'className'}}">{{letter}}</span>
    </div>
  </div>
  <div class="col-md-4">
@@ -35,7 +30,7 @@
          <!--   ng-class="{'addbg': show}" -->
           <tr ng-repeat="paragraph in Englishparagraph" ng-class="{'{{$index==0?'addbg':''}}':show}">
             <td class="grey666">第{{$index+1}}句</td>
-            <td class="grey666">正确 {{myletterInfo[$index].count}}{{chushi}}{{myletterInfo[$index].length}}</td>
+            <td class="grey666">正确 --</td>
           </tr>
         </tbody>
       </table>

@@ -2,9 +2,10 @@
   margin-top: 2em;
   border: 1px solid #97BDDB;
   border-radius: 1em;
-  position: fixed;
+  position:absolute;
   overflow: visible;
   z-index: 100;
+  width: 236px;
 }
 
 .nav-wrapper {
